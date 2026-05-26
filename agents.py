@@ -2,7 +2,10 @@
 # This module implements stateful workflows and deterministic reasoning cycles.
 
 import operator
+<<<<<<< HEAD
 import os
+=======
+>>>>>>> 5809a2e6186abc61e77ff7f164fddd77ff3eb8b7
 from typing import Annotated, List, TypedDict
 from langchain_core.messages import BaseMessage, HumanMessage
 from langgraph.graph import StateGraph, END
@@ -20,8 +23,12 @@ class NexusEngine:
     """
     def __init__(self, model_name="llama-3.1-8b-instant"):
         self.model_name = model_name
+<<<<<<< HEAD
         # API key read from environment variable (GROQ_API_KEY)
         self.llm = ChatGroq(model=model_name, groq_api_key=os.getenv("GROQ_API_KEY"))
+=======
+        self.llm = ChatGroq(model=model_name)
+>>>>>>> 5809a2e6186abc61e77ff7f164fddd77ff3eb8b7
         self.tools = {t.name: t for t in tools_list}
         self.llm_with_tools = self.llm.bind_tools(tools_list)
 
@@ -85,4 +92,8 @@ class NexusEngine:
         
         if last_message.tool_calls:
             return "continue"
+<<<<<<< HEAD
         return "end"
+=======
+        return "end"
+>>>>>>> 5809a2e6186abc61e77ff7f164fddd77ff3eb8b7
