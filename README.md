@@ -33,6 +33,15 @@ The system separates structural mapping from speculative signalling. That separa
 the ZVAKTHOR execution architecture: **the component that can influence a decision is not the component that
 authorises it.**
 
+## Tests and Architecture
+
+```bash
+python -m pytest tests/ -v     # 9 tests, no network and no model call required
+```
+
+- [`ARCHITECTURE.md`](ARCHITECTURE.md) — component, state and data flow, failure modes, known limitations.
+- [`docs/adr/`](docs/adr/) — architecture decision records.
+
 ## Quick Start
 
 ```bash
