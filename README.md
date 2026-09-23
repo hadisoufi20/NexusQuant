@@ -62,4 +62,5 @@ Get a Groq API key at https://console.groq.com/keys.
 
 ## License
 
-No reuse license is granted. The code is published for review and demonstration.
+Proprietary - all rights reserved. See [LICENSE](LICENSE). The code is published for review and
+demonstration; no reuse licence is granted.
