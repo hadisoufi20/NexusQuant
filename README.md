@@ -1,5 +1,7 @@
 # Nexus Quant — Autonomous Market Structure Analyzer
 
+[![ci](https://github.com/hadisoufi20/NexusQuant/actions/workflows/ci.yml/badge.svg)](https://github.com/hadisoufi20/NexusQuant/actions/workflows/ci.yml)
+
 **Agentic research framework for market structural analysis (XAU/USD).**
 Built with LangGraph, Groq (Llama 3.1), and ICT / Wyckoff logic.
 
